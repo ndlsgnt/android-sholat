@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginTop="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_gradient3">
+
+            <TextView
+                android:id="@+id/tv_hadis1"
+                android:text="Hadis"
+                style="@style/viewParent.headerText.HomeCardTitle" />
+
+            <TextView
+                android:layout_below="@+id/tv_hadis1"
+                android:id="@+id/tv_contentHadis1"
+                style="@style/viewParent.headerText.homeCardContent"
+                android:text="siap yang anda terima"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
